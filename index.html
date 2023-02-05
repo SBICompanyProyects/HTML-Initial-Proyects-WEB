@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CatPhotoApp</title>
+    </head>
+    <body>
+        <main>
+            <!-- Los elementos de encabezado h1 a h6 se utilizan para indicar
+                la importancia del contenido por debajo de ellos. Entre menor
+                sea el número, el contenido será más importante, por lo tanto,
+                el elemento h2 es menos importante que el elemento h1.
+                Solo utiliza un elemento h1 por página y coloca encabezados de
+                menor importancia debajo de encabezados de mayor importacion. -->
+            <h1>CatPhotoApp</h1>
+            <!-- HTML5 tiene diferentes elementos que ayudan a diferenciar diferentes
+                tipos de contenido. Estos elementos hacen tu código HTML más fácil de leer
+                y ayudan con el Posicionamiento en buscadores (Search Engine Optimization - SEO)
+                y accesibilidad. Los elementos anidados deben colocarse dos espacios más a la
+                derecha del elemento en el que están anidados. Este espacio se llama sangría
+                (indentación en programación) y se utiliza para facilitar la lectura de HTML. -->
+            <section>
+                <h2>Cat Photos</h2>
+                <!-- TODO: Add link to cat photos -->
+                <!-- El elemento p es usado para crear un párrafo de texto en sitios webs. -->
+                <!-- Puedes añadir imágenes a tu sitio web utilizando el elemento img.
+                    Los elementos img tienen una etiqueta de apertura sin una etiqueta de cierre.
+                    La etiqueta de un elemento que no necesita etiqueta de cierre se conoce como
+                    etiqueta de autocierre (self-closing tag). -->
+                <!-- Puedes hacer un enlace que te llevará a otra página con el elemento anchor (a).
+                    Añade un atributo target con el valor _blank en la etiqueta de apertura, del
+                    elemento anchor (a) para que el enlace abra en una nueva pestaña.-->
+                <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+                <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+            </section>
+            <section>
+                <h2>Cat Lists</h2>
+                <h3>Things cats love:</h3>
+                <!-- -->
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <!-- El elemento figure representa contenido independiente y te permitirá asociar una imagen a una descripción. -->
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                    <!-- Un elemento (figcaption), se utiliza para añadir una descripción o leyenda para describir una imagen anidada en un elemento figure.
+                    Por ejemplo, <figcaption>A cute cat</figcaption> añade la leyenda A cute cat. -->
+                    <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+                </figure>
+                <h3>Top 3 things cats hate:</h3>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                    <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+                </figure>
+            </section>
+            <section>
+                <h2>Cat Form</h2>
+                <!-- El atributo action indica, dónde deben enviarse los datos del formulario.
+                Por ejemplo, <form action="/submit-url"></form> le dice al navegador que los
+                datos del formulario deben ser enviados a la ruta /submit-url.-->
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <!-- Paso 50
+                        El elemento fieldset se utiliza para agrupar elementos input y label
+                        relacionados dentro de un formulario web. Los elementos fieldset 
+                        son elementos de nivel de bloque, lo que significa que aparecen en 
+                        una nueva línea. -->
+                    <!-- El elemento input te permite recolectar datos desde un formulario web de diferentes formas.
+                        Al igual que los elementos img, los elementos input son de auto-cierre y no necesitan
+                        etiquetas de cierre.-->
+                    <!-- Hay diferentes tipos de elementos input, los cuales los puedes crear con el atributo type.
+                        Puedes crear fácilmente un campo de contraseña (password), un botón de reinicio (reset) o un
+                        control para permitir a los usuarios seleccionar un archivo desde su computadora.Para que los 
+                        datos de un formulario puedan acceder al destino especificado en el atributo action, debes darle 
+                        al campo de texto un atributo name y darle un valor que represente a los datos que están siendo 
+                        enviados. Un texto provisional (placeholder) nos da una idea de que tipo de información debemos 
+                        escribir en un elemento input.Para evitar que un usuario entregue su formulario incompleto, 
+                        necesitas añadir el atributo required al elemento input. El atributo required no necesita ningún valor.
+                        Simplemente necesitas añadir la palabra required al elemento input, -->
+                    <!-- Utiliza el elemento button para crear un botón cliqueable. Por ejemplo, <button>Click Here</button>
+                        crea un botón con el texto Click Here. A pesar de que hayas añadido tu botón debajo del elemento input de 
+                        tipo texto, estos aparecen juntos en la página. Esto se debe a que los elementos input y button son 
+                        elementos inline, los cuales no aparecen en una nueva línea.-->
+                    <!-- Puedes usar botones de radio (radio button) para preguntas en las que quieres que el usuario solo
+                        te dé una respuesta a partir de múltiples opciones.-->
+                    <!-- Los elementos label se utilizan para ayudar a asociar el texto a un elemento input con el 
+                        propio elemento input (especialmente para las tecnologías de asistencia como los lectores 
+                        de pantalla).  -->
+                    <!-- El elemento fieldset se utiliza para agrupar elementos input y label relacionados dentro 
+                        de un formulario web. Los elementos fieldset son elementos de nivel de bloque, lo que significa
+                        que aparecen en una nueva línea. -->
+                    <!-- El elemento legend actúa como una leyenda/descripción, para el contenido del elemento fieldset. 
+                        Le da a los usuarios un contexto sobre lo que deben ingresar en esa parte del formulario. -->
+                    <fieldset>
+                        <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+                        <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+                    </fieldset>
+                    <!-- Hay otra manera de asociar un texto con el elemento input. Puedes anidar un texto dentro de un 
+                        elemento label y añadirle un atributo for con el mismo valor del atributo id del elemento input. -->
+                    <!-- Añade el atributo name con el valor personality al elemento input de tipo checkbox.
+                        Aunque no notarás cambios en el navegador, hacer esto hará más fácil que un servidor
+                        procese tu formulario web, especialmente cuando hay múltiples checkbox. -->
+                    </fieldset>
+                    <fieldset>
+                        <legend>What's your cat's personality?</legend>
+                        <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+                        <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+                        <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+                    </fieldset>
+                    <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+        </footer>
+    </body>
+</html>
