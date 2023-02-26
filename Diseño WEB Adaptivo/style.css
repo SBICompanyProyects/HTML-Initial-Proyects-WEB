@@ -1,0 +1,19 @@
+body{
+    margin: auto;
+    width: 80%;
+    background: rgba(100, 200, 200, 0.8);
+}
+.header{
+    text-align: center;
+    background: linear-gradient(90deg,rgba(255,0,0,0.8), rgba(0, 0, 255, 0.8));
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 1);
+    
+}
+.footer{
+    text-align: center;
+    font-size: 8px;
+    font-style: italic;
+}
+.contenido{
+    width: 50%;
+}
